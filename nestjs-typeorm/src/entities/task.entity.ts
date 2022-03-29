@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 
 @Entity()
-export class User {
+export class Task {
     @PrimaryGeneratedColumn()
     readonly task_id: number;
 

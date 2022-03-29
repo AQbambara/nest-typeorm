@@ -2,10 +2,14 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { Task } from 'src/entities/task.entity';
 
 
 @Module({
-  imports: [TypeOrmModule.forRoot()],
+  imports: [TypeOrmModule.forRoot({
+    entities: [Task],
+    synchronize: true,
+  })],
   controllers: [AppController],
   providers: [AppService],
 })
