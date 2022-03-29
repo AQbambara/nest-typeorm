@@ -1,2 +1,3 @@
 # nest-typeorm
 NestJSとTypeORM
+マイグレーションが上手くいかないのを直したい
